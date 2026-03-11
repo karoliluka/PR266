@@ -1,10 +1,10 @@
-# Analiza slovenskega trga nepremičnin na podlagi Evidence trga nepremičnin (ETN)
+# Analiza slovenskega trga nepremičnin na podlagi Evidence trga nepremičnin v zadnjih 10 letih (ETN)
 
 ## Opis problema
 
-Nepremičninski trg je eden ključnih pokazateljev gospodarskega stanja in kakovosti življenja v državi. V Sloveniji so se cene nepremičnin v zadnjih desetih letih močno spremenile, a sistematična javna analiza na ravni posameznih poslov ostaja redkost.
+Nepremičninski trg je eden ključnih pokazateljev gospodarskega stanja in kakovosti življenja v državi. V Sloveniji so se cene nepremičnin v zadnjih desetih letih močno spremenile in s pomočjo različnih statističnih in analitičnih metod bomo prikazali zakaj.
 
-Cilj projekta je analizirati dejanske kupoprodajne transakcije nepremičnin v Sloveniji na podlagi odprtih podatkov Evidence trga nepremičnin (ETN), ki jo vodi Geodetska uprava RS. Osredotočili se bomo na **tržne posle** (torej transakcije po tržnih cenah, brez sorodstvenih prenosov, razlastitev ipd.) in poskušali odgovoriti na naslednja vprašanja:
+Cilj projekta je analizirati transakcije nepremičnin v Sloveniji na podlagi odprtih podatkov Evidence trga nepremičnin (ETN), ki jo vodi Geodetska uprava RS. Osredotočili se bomo na **tržne posle** (torej transakcije po tržnih cenah, brez sorodstvenih prenosov, razlastitev ipd.) in poskušali odgovoriti na naslednja vprašanja:
 
 - Kako so se cene nepremičnin (€/m²) gibale skozi čas po posameznih regijah oz. občinah?
 - Katere občine oz. lokacije izkazujejo najvišje in najnižje cene na m²?
@@ -12,6 +12,7 @@ Cilj projekta je analizirati dejanske kupoprodajne transakcije nepremičnin v Sl
 - Kakšna je tipična površina prodanih nepremičnin po posameznih kategorijah?
 - Ali obstaja sezonski vzorec v obsegu in cenah poslov?
 - Kateri dejavniki (površina, lokacija, leto izgradnje, vrsta) najbolj vplivajo na ceno?
+- Kateri drugi dejavniki (dvetovne krize, vojne, pandemije, ... ) so vplivali na ceno?
 
 ---
 
@@ -24,7 +25,7 @@ Podatki so javno dostopni in brezplačni prek aplikacije **JGP (Javni geodetski 
 
 ### Struktura podatkov
 
-Podatki so v obliki **CSV datotek** (kodna tabela UTF-8, ločilo vejica), razdeljeni v naslednje sklope:
+Podatki so v obliki **CSV datotek**, razdeljeni v naslednje sklope:
 
 | Datoteka | Vsebina |
 |---|---|
@@ -42,18 +43,16 @@ Ključna polja za analizo:
 
 ### Obseg
 
-Podatki so dostopni od leta **2007** dalje, za vsako leto posebej, za posamezno občino ali celotno Slovenijo. Za projekt bomo zajeli vsaj obdobje **2016–2024**, kar predstavlja več deset tisoč kupoprodajnih poslov.
+Podatki so dostopni od leta **2007** dalje, za vsako leto posebej, za posamezno občino ali celotno Slovenijo. Za projekt bomo zajeli obdobje **2015–2025**.
 
 ---
 
 ## Okvirni plan analize
 
-1. **Pridobitev in čiščenje podatkov** — prenos ETN CSV datotek, združevanje letnikov, filtriranje tržnih poslov, odstranjevanje outlierjev
+1. **Pridobitev in čiščenje podatkov** — prenos ETN CSV datotek, združevanje letnikov, filtriranje tržnih poslov, odstranjevanje outlierjev, združitev relevantnih tabel
 2. **Eksplorativna analiza** — porazdelitve cen, površin, vrst nepremičnin; časovni trendi
 3. **Prostorska analiza** — primerjava po občinah in statističnih regijah
 4. **Modeliranje** — regresijski model za napoved cene glede na lokacijo, površino, vrsto in leto
 5. **Vizualizacija** — interaktivni grafi in zemljevidi
 
 ---
-
-*Podatki so odprti in prosto dostopni v skladu s predpisi o dostopu do informacij javnega značaja.*
