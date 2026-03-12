@@ -56,3 +56,10 @@ Podatki so dostopni od leta **2007** dalje, za vsako leto posebej, za posamezno 
 5. **Vizualizacija** — interaktivni grafi in zemljevidi
 
 ---
+
+### Člani skupine
+Aleks Ašanin
+Luka Karoli
+Edis Mizić
+Aljaž Smole
+Matej Zaletelj
