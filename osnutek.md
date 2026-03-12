@@ -58,8 +58,8 @@ Podatki so dostopni od leta **2007** dalje, za vsako leto posebej, za posamezno 
 ---
 
 ### Člani skupine
-Aleks Ašanin
-Luka Karoli
-Edis Mizić
-Aljaž Smole
-Matej Zaletelj
+- Aleks Ašanin
+- Luka Karoli
+- Edis Mizić
+- Aljaž Smole
+- Matej Zaletelj
