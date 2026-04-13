@@ -1,4 +1,4 @@
-# Vmesno poročilo — Analiza slovenskega trga nepremičnin (2015–2024)
+# Vmesno poročilo — Analiza slovenskega trga nepremičnin (2015–2025)
 
 **Skupina:** 06  
 **Predmet:** Podatkovno rudarjenje, 2025/26  
